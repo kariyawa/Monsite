@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*font-family: 'Raleway', sans-serif;*/
+/*vert turquoise --> #91422b */
+/*vert fonce --> #01796F */
+body, html {
+	padding:0;
+	margin: 0;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+a, a:hover {
+	text-decoration: none;
+	color: #91422b;
+}
+.container-fluid {
+	padding: 0;
+}
+.separator{
+	height: 3px;
+	width: 5%;
+	border: none;
+	box-shadow: none;
+	background-color: #01796F;
+}
+/*header*/
+.header {
+	background-color:  #91422b;
+	height: 70px;
+	line-height: 70px;
+}
+.logo {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	float: left;
+}
+.menu {
+	float: right;
+}
+.menu a{
+	color: #FFFFFF;
+	margin-right: 20px;
+}
+.menu a:hover{
+	color: #01796F;
+}
+/*banniere*/
+.banner{
+	width: 100%;
+	max-width: 100%;
+}
+.ban{
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+.ban img {
+	width: 100%;
+	max-width: 100%;
+}
+.inner-banner {
+	position: absolute;
+	/*va se positionner au dessus de sa div qui est en position relative*/
+	/*mtn qu'on est en pos absolute on utilise plus les margin que top left ... */
+	top: 40%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.inner-banner h1 {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 20px #000000;
+}
+.inner-banner .btn-custom{
+	background-color:#91422b;
+	color:#ffffff;
+	border-radius: 20px;
+}
+.inner-banner .btn-custom:hover{
+	background-color: #01796F;
+}
+/*about*/
+#about {
+	text-align: center;
+	padding-top: 10%;
+}
+.about article {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.about article h2{
+	text-align: center;
+}
+/*portfolio*/
+.portfolio {
+	background-color: #EEEEEE;
+	height: 800px;
+}
+#portfolio {
+	text-align: center;
+}
+.portfolio .item-folio{
+	height: 280px;
+	background-color: #01796F;
+}
+/*contact*/
+.footer {
+	background-color: #91422b;
+	height: 500px;
+}
+.footer p{
+	color: #FFFFFF;
+	text-align:center;
+	padding-top: 5%;
+}
+#contact {
+	color: #FFFFFF;
+	text-align: center;
+}
+.formulaireContact{
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+input{
+	margin-bottom: 20px;
+}
+input[type=text] {
+	height: 50px;
+	width: 500px;
+	border: none;
+}
+input[type=email] {
+	height: 50px;
+	width: 500px;
+	border: none;
+}
+textarea {
+	width: 500px;
+	height: 200px;
+	resize: vertical;
+}
+
+.inscription{
+	font-family:Roboto,sans-serif;
+	 background-image:url(https://image.freepik.com/free-vector/beige-geometric-background_1378-203.jpg) ;
+	 border-style: 1px solid grey;
+	 border-radius: 1%;
+     margin: 0 auto;
+     text-align: center;
+	 opacity: 0.8;
+	 max-width: 550px;
+     box-shadow: 5px 5px 5px 0px #eee;
+     height: 550px;
+}
+/*--- for label of first and last name---*/
+.username, .firstname,.lastname, .mail,.pass{
+	font-family: 'Raleway', sans-serif;
+     font-size: 15px;
+	 color: black;
+	 text-align:left;
+}
