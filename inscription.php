@@ -89,5 +89,6 @@
         require 'templates/footer.php'
     ?>
     <!-- end footer -->
+    <script src="https://kit.fontawesome.com/faa5f757b2.js" crossorigin="anonymous"></script>
 </body>
 </html>
