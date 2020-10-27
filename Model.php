@@ -1,17 +1,8 @@
-<!-- Model principal qui va être utilisé par héritage par les autres modèles de l'application-->
+<!-- Model principal-->
 <?php
 
 abstract class Model{
-    //info DB
-    /*private $host="localhost";
-    private $db_name="avenoel";
-    private $username= "root";
-    private $password="";*/
-    
-    //Propriété contenant la connexion
     protected $_connexion;
-
-    //Propriétés contenant les informations de requêtes
     public $table;
     //public $id;
     
@@ -20,17 +11,24 @@ abstract class Model{
 
         try{
             $this->_connexion= new PDO('mysql:host=localhost;dbname=avenoel;charset=utf8','root','');
-        }catch(Exception $e){
+        }catch(PDOException $e){
             echo 'Erreur: '. $e->getMessage();
         }
     }
 
     public function getAll(){
-        $sql="SELECT * FROM". $this->table;
+        $sql="SELECT * FROM ". $this->table;
         $query= $this->_connexion->prepare($sql);
         $query->execute();
         return $query->fetchAll();
     }
+
+    /*public function getUnique(){
+        $sql="SELECT * FROM ". $this->table ." WHERE id=" .$this->id;;
+        $query= $this->_connexion->prepare($sql);
+        $query->execute();
+        return $query->fetch();
+    } */
     
 }
     

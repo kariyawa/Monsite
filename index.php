@@ -13,8 +13,9 @@ if(isset($params[0])){
     $action= isset($params[1]) ? $params[1]: 'index';
     require_once(ROOT.'controllers/'.$controller.'.php');
     
+    $controller= new $controller(); //$client= new $client();
+    
     if(method_exists($controller,$action)){
-        $controller= new $controller(); //$client= new $client();
         $controller->$action(); //$client->index(); appeler la methode index
     }else{
         http_response_code(404);
